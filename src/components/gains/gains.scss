@@ -1,0 +1,104 @@
+.gains {
+    background-color: #F5F4F0;
+    padding: 33px 72px 66px;
+    margin-bottom: 150px;
+    &__textbox {
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    &__title {
+        font-size: 55px;
+        line-height: 120%;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 140%;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        margin-bottom: 55px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        width: 416px;
+        background-color: #fff;
+        margin-right: 24px;
+        padding: 19px 44px 73px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        &:last-child {
+            margin-right: 0;
+            padding: 19px 44px 19px;
+        }
+        &-image {
+            margin-bottom: 23px;
+        }
+        &-title {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 27px;
+            margin-bottom: 14px;
+        }
+        &-text {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 27px;
+            text-align: center;
+            color: #696969;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /* Estilos específicos para pantallas de celular */
+    .gains {
+        padding: 20px; /* Cambiar el relleno para pantallas de celular */
+        margin-bottom: 80px; /* Cambiar el margen inferior para pantallas de celular */
+    }
+
+    // .gains__textbox,
+    // .gains__title,
+    // .gains__text,
+    // .gains__list,
+    // .gains__item,
+    // .gains__item-image,
+    // .gains__item-title,
+    // .gains__item-text {
+    //     display: block; /* Mostrar todos los elementos como bloques */
+    // }
+
+    .gains__title {
+        font-size: 32px; /* Cambiar el tamaño de fuente del título para pantallas de celular */
+    }
+
+    .gains__text {
+        font-size: 16px; /* Cambiar el tamaño de fuente del texto para pantallas de celular */
+    }
+
+    .gains__list {
+        flex-direction: column; /* Cambiar la dirección de flexbox para pantallas de celular */
+    }
+
+    .gains__item {
+        width: 100%; /* Hacer que los elementos ocupen todo el ancho para pantallas de celular */
+        margin-right: 0; /* Eliminar el margen derecho para pantallas de celular */
+        margin-bottom: 24px; /* Agregar un margen inferior para separar los elementos para pantallas de celular */
+    }
+
+    .gains__item-title {
+        display: flex; /* Hacer que el título sea un contenedor flexible */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+    }
+}
+
